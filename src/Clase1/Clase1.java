@@ -1,6 +1,6 @@
-package Sesion2;
+package Clase1;
 
-public class Sesion2 {
+public class Clase1 {
     public static void main(String[] args) {
 
         // 📌 EJERCICIO 1:

@@ -19,7 +19,7 @@ public class Clase5 {
 //        }
 //        scanner.close();//Cierra el escaner.
 //
-//        //Menu de opciones donde se elije
+//        //Menu de opciones donde se elige
 //
 //        System.out.println("*Menú de opciones*");
 //        System.out.println("1. Saludar");
@@ -86,18 +86,18 @@ public class Clase5 {
 //            System.out.println("Numero: " + i);
 //        }
 
-        Scanner scanner = new Scanner(System.in);
-        int numero;
-        System.out.println("Dame un numero. El 0 es para salir.");
-        numero = scanner.nextInt();
-        while(numero!=0){
-            System.out.println("Has introducido: "+ numero);
-            System.out.println("Dame otro número: ");
-            numero = scanner.nextInt();
-
-        }
-        System.out.println("Programa finalizado");
-        scanner.close();
+//        Scanner scanner = new Scanner(System.in);
+//        int numero;
+//        System.out.println("Dame un numero. El 0 es para salir.");
+//        numero = scanner.nextInt();
+//        while(numero!=0){
+//            System.out.println("Has introducido: "+ numero);
+//            System.out.println("Dame otro número: ");
+//            numero = scanner.nextInt();
+//
+//        }
+//        System.out.println("Programa finalizado");
+//        scanner.close();
 
 
 
