@@ -1,81 +1,67 @@
 package Clase2;
 
-import java.util.Scanner;
-
 public class Clase2 {
     public static void main(String[] args) {
 
-        //CONSTANTES, OPERADORES Y EXPRESIONES
+        // 📌 EJERCICIO 1:
+        // Crea una variable de cada tipo entero y asígnale valores distintos.
+        // Luego imprímelas con System.out.println().
 
-        //1️⃣ Crea una constante llamada GRAVEDAD con el valor 9.81 y muestra su valor por pantalla.
-        String gravedad = "9.81";
-        System.out.println("El valor de la gravedad es " + gravedad + " m/s2");
+        int numeroInt = 10;
+        byte numeroByte = 2;
+        short numeroShort = 1;
+        long numeroLong = 100000000000000L; //IMPORTANTE LA L AL FINAL DE UN LONG
+        System.out.println("Numero Int: " + numeroInt);
+        System.out.println("Numero Short: " + numeroShort);
+        System.out.println("Numero long: " + numeroLong);
 
-        //2️⃣ Declara dos variables a = 25 y b = 7. Realiza todas las operaciones aritméticas entre ellas e imprime los resultados.
-        int a = 25;
-        int b = 7;
-        System.out.println("Suma: " + (a+b));
-        System.out.println("Resta: " + (a-b));
-        System.out.println("Multiplicación: " + (a*b));
-        System.out.println("División: " + (a/b));
-        System.out.println("Módulo: " + (a%b));
 
-        //3️⃣ Declara una variable edad e imprime si la persona es mayor de edad (>= 18) o menor de edad (< 18).
-        int Edad = 18;
-        int edadPersona1 = 16;
-        int edadPersona2 = 21;
-        System.out.println("La persona 1 tiene 16 años. Es la persona 1 mayor de 18 años?: " + (edadPersona2 > Edad));
-        System.out.println("La persona 2 tiene 21 años. Es la persona 2 mayor de 18 años?: " + (edadPersona1 < Edad));
+        // 📌 EJERCICIO 2:
+        // Declara una variable de tipo float y otra de tipo double con valores distintos.
+        // Imprímelas en la consola.
+        float numeroFloat = 3.14f; //IMPORTANTE, f AL FINAL
+        double numeroDouble = 3.1415164978998; //NUMERO DECIMAL CON MUCHA PRECISION
+        System.out.println("Numero float: " + numeroFloat);
+        System.out.println("Numero double: "+ numeroDouble);
 
-       // 4️⃣ Crea un programa que reciba dos números y determine cuál es mayor, menor o si son iguales.
-        int num1 = 5;
-        int num2 = 7;
-        System.out.println("Es el 5 mayor que 7?: "+(5>7));
-        System.out.println("Es 5 menor que 7?: "+(5<7));
-        System.out.println("Es 5 igual que 7?: "+(5==7));
+        // 📌 EJERCICIO 3:
+        // Declara una variable boolean y asígnale un valor falso.
+        // Luego usa un `if` para imprimir un mensaje si es true o false.
+        boolean Verdadero = true;
+        boolean Falso = false;
+        System.out.println("Tengo 16 años: "+ false);
+        System.out.println("Tengo 26 años: "+ true);
+        System.out.println("Soy mayor de 20 años?: " + true);
 
-        //5️⃣ Escribe un programa que evalúe la siguiente expresión lógica: (5 > 3) && (10 < 20). ¿Cuál es el resultado?
-        //6️⃣ Modifica el programa anterior y evalúa también (5 > 3) || (10 > 20).
+        // 📌 EJERCICIO 4:
+        // Declara una variable de tipo char con tu inicial y otra con un símbolo especial.
+        // Imprímelas en la consola.
 
-        System.out.println((5 > 3) && (10 < 20));
-        System.out.println((5 > 3) || (10 > 20));
+        char letra = 'Y'; //Char es solo para una letra
+        char unicode = '\u2764';
+        System.out.println("Mi letra favorita es la " + letra + " y mi figura favorita es un " + unicode);
 
-        //7️⃣ Declara tres variables x = 10, y = 20, z = 30. Compara x + y con z utilizando operadores relacionales.
-        int x = 10;
-        int y = 20;
-        int z = 30;
-        System.out.println((x+y)==z);
-        System.out.println((x+y)!=z);
-        System.out.println((x+y)>z);
-        System.out.println((x+y)<z);
+        // 📌 EJERCICIO 5:
+        // Declara una variable String con tu nombre y otra con tu lenguaje favorito.
+        // Concátalas en un mensaje y muestra el resultado.
+        String anime = "Mi anime favorito es Naruto";
+        System.out.println("¿Cual es tu anime favorito?\n" + anime);
 
-        //8️⃣ Crea un programa que pida al usuario dos números y evalúe si son múltiplos (num1 % num2 == 0).
-//        Scanner scanner = new Scanner(System.in);
-//        int numero1;
-//        int numero2;
-//        System.out.println("Dame un número: ");
-//        numero1 = scanner.nextInt();
-//        System.out.println("Dame otro numero: ");
-//        numero2 = scanner.nextInt();
-//        if (numero1 % numero2 == 0) {
-//        System.out.println("El " + numero1 + " es múltiplo de " + numero2);}
-//        else {System.out.println("El "+numero1+" no es multiplo de "+numero2);}
-//        scanner.close();
+        // 📌 EJERCICIO 6:
+        // Declara un array de 5 nombres y muéstralos en la consola usando un bucle.
 
-        //9️⃣ Escribe un código que reciba un número e indique si es par o impar usando el operador módulo (%).
-        Scanner scannerr = new Scanner(System.in);
-        System.out.println("Un numerito please: ");
-        int numero3 = scannerr.nextInt();
-        if (numero3 % 2 == 0){
-            System.out.println("El numero es par");}
+        int [] arrays = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println("Imprimo array de la 1º posición: " + arrays[0]);
 
-        else {
-            System.out.println("El numero es impar");}
-        scannerr.close();
-
-        //🔟 Define una constante TASA_CAMBIO con el valor 1.12 (dólar a euro).
-        // Convierte una cantidad de dólares ingresada por el usuario a euros.
-        //TODAVÍA NO SABEMOS CONVERTIR
-
+        // 📌 EJERCICIO 7:
+        // Usa literales para imprimir en consola:
+        // Un número entero, un decimal, un booleano y una cadena de texto.
+        int numEntero = 100;
+        boolean Verdaderus = true;
+        boolean Falsus = false;
+        String miTexto = "este es mi último ejercicio.";
+        System.out.println("Es "+false+" que este es el ejercicio número "+numEntero+ ", pero, \n" +
+                "sí que es cierto que " + miTexto);
     }
+
 }
