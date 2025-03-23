@@ -1,4 +1,4 @@
-package Clase5;
+package Sesion5;
 
 import java.util.Scanner;
 //Sin esto, no puedo pedirle al usuario ningún dato
